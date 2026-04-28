@@ -1,0 +1,29 @@
+# Praxis GitIgnore
+# Sessions are personal, templates are shared
+
+# Personal/session data (never commit)
+sessions/*
+custom/*.md
+memory/patterns.yml
+custom/extra-agents/*.md
+
+# But commit these (shared templates)
+!templates/*.md
+!custom/generate-agent.py
+!custom/README.md
+!memory/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
