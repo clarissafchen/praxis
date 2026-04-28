@@ -1,4 +1,4 @@
-# AI Operations Multi-Agent System
+# Multi-Agent System
 
 A personal, project-based multi-agent system for AI-assisted software development.
 
