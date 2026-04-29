@@ -4,6 +4,28 @@ A personal, project-based multi-agent system for AI-assisted software developmen
 
 Built to work with Claude Code (no API costs, local execution).
 
+## Prerequisites
+
+Before using Praxis, you need:
+
+1. **Claude Code** installed — [Download here](https://claude.ai/code)
+2. **Git** to clone the repository
+
+## Setup
+
+```bash
+# 1. Clone the repository
+git clone git@github.com:clarissafchen/praxis.git
+
+# 2. Navigate into the praxis folder
+cd praxis
+
+# 3. Launch Claude Code
+claude
+```
+
+Once Claude Code is running, you're ready to use Praxis.
+
 ## Quick Start
 
 ### NEW: Autonomous Coordination Mode (Recommended)
@@ -39,6 +61,8 @@ cat praxis/sessions/*/team_meeting.md
 
 ## Architecture
 
+Praxis runs entirely inside Claude Code using persona switching:
+
 ```
 You (Human)
     ↓
@@ -51,11 +75,12 @@ Git Repository (your code)
 
 **How it works:**
 
-1. You type `@agent` in Claude Code
-2. I read the agent template and switch persona
-3. I read session state from local files
-4. I respond as that agent
-5. I update state files
+1. You launch Claude Code from the `praxis/` directory: `claude`
+2. You type `@agent` (e.g., `@manager`)
+3. I read the agent template and switch persona
+4. I read session state from local files
+5. I respond as that agent
+6. I update state files
 
 No external APIs, no cloud services, no costs.
 
