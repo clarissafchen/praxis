@@ -11,13 +11,12 @@ One command coordinates your entire team:
 
 ```bash
 @manager Build user notifications for order updates
-
+```
 ### Manager automatically:
 - Convenes full team meeting
 - Coordinates all 4-5 agents
 - Delivers unified plan in 15 seconds
 - Saves complete meeting log for transparency
-```
 
 ### Traditional: Direct Agent Control
 Talk to individual agents directly:
